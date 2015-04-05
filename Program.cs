@@ -219,10 +219,9 @@ namespace KurisuBlitz
                     {
                         if (qtarget.Distance(Me.ServerPosition) > _menu.Item("dnd").GetValue<Slider>().Value)
                         {
-						
-							if (qtarget.Distance(Me.ServerPosition < _menu.Item("dnd2").GetValue<Slider>().Value)
+							if (qtarget.Distance(Me.ServerPosition) < _menu.Item("dnd2").GetValue<Slider>().Value)
 							{
-								if (_menu.Item("dograb" + qtarget.ChampionName).GetValue<StringList>().SelectedIndex != 0) 
+                            	if (_menu.Item("dograb" + qtarget.ChampionName).GetValue<StringList>().SelectedIndex != 0) 
                                 _q.Cast(poutput.CastPosition);
 							}
                         }
